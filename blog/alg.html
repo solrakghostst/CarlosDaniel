@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>    
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/css.css" media ="all" />
+        <title>Meu Blog</title>
+    </head> 
+    <body>
+
+        <section>
+
+            <header>
+                <img  src="imagens/banner.jpg" />
+            </header>
+
+            <nav>
+                <ul>
+                    <li> <a tabindex = "1"  href="index.html"> Home </a> </li>
+                    <li> <a tabindex = "2" title = "Empresa" href = "fatec.html"> Fatec </a></li>
+					<li> <a tabindex = "3" title = "Portfolio" href = "portifolio.html"> Portfolio </a></li>
+                    <div class="dropdown">
+                        <li><a tabindex="3"><span>Disciplina</span></a><li>
+                            <div class="dropdown-content">
+                                <a class="aa" href="alg.html">Algoritmo</a>
+                                
+                                <a class="aa" href="pt.html">Português</a><br>
+                                <a class="aa" href="bs.html">Base da Internet</a>
+                                <a class="aa" href="ing.html">Inglês</a><br>
+                                <a class="aa" href="cc.html">Criação de Conteúdo</a>
+                                
+                            </div>
+                    </div>
+
+                </ul>
+            </nav>
+            <article class="alg">
+                <center>                    
+                    <h2>Máscara de Dados</h2>
+                    <h4 >
+                        <p>Máscaras de dados são usadas para definir entradas e saídas de dados em C. Basicamente, ela demonstra ao programa que tipo de conversão deve ser adotado para converter os bytes armazenados em uma variável.</p>                    
+                        <p>Por exemplo, se entrarmos com uma variável de ponto flutuante (float) que usa 4 bytes de memória, na saída, também devemos utilizar uma máscara de ponto flutuante. Se utilizarmos uma máscara de número inteiro, o algoritmo vai ler apenas os dois primeiros bytes, pois uma variável inteira tem apenas a metade dos bytes de ponto flutuante.</p>                    
+                        <p>E além disso, variáveis int, float e double usam padrões diferentes de armazenamento. Por exemplo, se digitarmos a entrada 10, ela será convertida em bytes em int, que será convertida em bytes diferentes em float, que por sua vez, será totalmente diferente de double. Apenas char é igual int e vice-versa.</p>                    
+                    </h4>                    
+                    <hr>
+                    <br><br>
+                    <center><h2>Exemplos de Máscara</h2></center>                    
+                    <table>
+                        <tr>
+                            <th>Máscara</th>
+                            <th>Tipo de dado</th>
+                            <th>Descrição</th>
+                        </tr>               
+                        <tr>
+                            <td>%d</td>
+                            <td>int</td>
+                            <td>mostra um número inteiro</td>
+                        </tr>
+                        <tr>
+                            <td>%c</td>
+                            <td>char</td>
+                            <td>mostra um caracter</td>
+                        </tr>
+                        <tr>
+                            <td>%f</td>
+                            <td>float ou double</td>
+                            <td>mostra um número decimal</td>
+                        </tr>
+                        <tr>
+                            <td>%i</td>
+                            <td>int</td>
+                            <td>mostra um número inteiro</td>
+                        </tr>
+                        <tr>
+                            <td>%ld</td>
+                            <td>long int</td>
+                            <td>mostra um número inteiro longo</td>
+                        </tr>
+                        <tr>
+                            <td>%e</td>
+                            <td>float ou double</td>
+                            <td>mostra um número exponencial (número científico)</td>
+                        </tr>
+                        <tr>
+                            <td>%o</td>
+                            <td>int</td>
+                            <td>mostra um número inteiro em formato octal</td>
+                        </tr>
+                        <tr>
+                            <td>%x</td>
+                            <td>int</td>
+                            <td>mostra um número inteiro em formato hexadecimal</td>
+                        </tr>
+                        <tr>
+                            <td>%s</td>
+                            <td>char</td>
+                            <td>mostra uma cadeia de caracteres (string)</td>
+                        </tr>
+                    </table>
+                </center>                                
+            </article>
+            <aside>
+                <h2></h2>
+                <ul>
+                    <li> <img class="fatec" alt = "foto1" src = "imagens/c.png"/></li>                    
+                    
+                </ul>
+                
+            </aside>
+            <aside>
+                <h2></h2>
+                <ul>
+                    <li> <img class="fatec" alt = "foto1" src = "imagens/c2.jpg"/></li>                    
+                </ul>
+            </aside>
+            <footer>                
+                <p>Copyright &copy; Carlos Daniel, todos os direitos reservados.</p>
+            </footer>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>    
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/css.css" media ="all" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".1").hide();
+                $(".botao1").click(function () {
+                    $(".1").toggle();
+                    $(".2").hide();
+                });
+            });
+            $(document).ready(function () {
+                $(".2").hide();
+                $(".botao2").click(function () {
+                    $(".2").toggle();
+                    $(".1").hide();
+                });
+            });
+        </script>
+        <title>Meu Blog</title>
+    </head> 
+    <body>
+
+        <section>
+
+            <header>
+                <img alt="Logotipo da Strada Transportadora" src="imagens/banner.jpg" />
+            </header>
+
+            <nav>
+                <ul>
+                    <li> <a tabindex = "1" title = "HOME" href="index.html"> Home </a> </li>
+                    <li> <a tabindex = "2" title = "Empresa" href = "fatec.html"> Fatec </a></li>
+					<li> <a tabindex = "3" title = "Portfolio" href = "portifolio.html"> Portfolio </a></li>
+                    <div class="dropdown">
+                        <li><a tabindex="3"><span>Disciplina</span></a><li>
+                            <div class="dropdown-content">
+                                <a class="aa" href="alg.html">Algoritmo</a>
+                                
+                                <a class="aa" href="pt.html">Português</a><br>
+                                <a class="aa" href="bs.html">Base da Internet</a>
+                                <a class="aa" href="ing.html">Inglês</a><br>
+                                <a class="aa" href="cc.html">Criação de Conteúdo</a>
+
+                            </div>
+                    </div>                    						
+                </ul>
+            </nav>
+            <article class="pt">
+                <button class="botao1">Relatório</button><button class="botao2">Resenha</button><br><br><br><br><br><br>
+                <h2 class="1" align="center">Relatório - Python</h2>
+                <h4 class="1" align="justify">
+                    <p>O Minicurso de Python, realizado na instituição Fatec de Jales – Professor José Camargo, no dia 15/05/2017, na I SITEF (Simpósio de Tecnologia da Fatec Jales) da instituição, com o objetivo de ampliar o conhecimento fornecendo um minicurso aos alunos sobre uma linguagem de programação que não é oferecida no decorrer da graduação.</p>
+                    <p>O minicurso teve uma duração de 4 horas, no qual foi apresentada a linguagem de programação Python, que se trata de uma linguagem de programação muito mais prática e fácil de utilizar, que foi apresentado desde de sua base inicial até recursos mais avançados, como a criação de classes e etc.</p>
+                    <p>O minicurso foi ministrado por José Paulo Codinhoto, que é programador na área de Python com uma grande experiência na linguagem, utilizando a ferramenta Jupyter, que fornece suporte à linguagem Python.</p>
+                    <p>O evento foi um sucesso, pois a Fatec - José Camargo está buscando ampliar o conhecimento de seus alunos, fornecendo conteúdos que os alunos não teriam acesso ao decorrer da graduação, porém teve uma variedade de cursos baixa na área TI.</p>
+                    <p align="right">Jales, 23 de maio de 2017</p>
+                </h4>
+
+                <h2 class="2" align="center">Controle de Irrigação de Orquídeas com Sistema Wi-Fi Residencial com Arduino
+                </h2>
+                <h4 class="2" align="justify">
+                    <p>No primeiro tópico – Introdução – A autora trata a respeito do preço de cada orquídea, variando de “espécie para espécie”, também é abordado sobre os cuidados que se deve manter com tais plantas. Como exemplo de cuidados é citado quantidade de agua, inserida, luz e temperatura do ambiente sendo assim apresentando uma maneira de prevenir problemas nessas situações.</p>
+                    <p>O segundo tópico – Fundamentação Teórico – É iniciado uma apresentação sobre a placa Arduino (placa de comunicação), essa placa tem a funcionalidade de perceber o ambiente por meio de sensores, que medem o solo, umidade do ar, sendo assim, se o solo estiver muito seco a irrigação se inicia automaticamente.</p>
+                    <p>O minicurso foi ministrado por José Paulo Codinhoto, que é programador na área de Python com uma grande experiência na linguagem, utilizando a ferramenta Jupyter, que fornece suporte à linguagem Python.</p>
+                    <p>No terceiro tópico – Abordagem Proposta -  A autora mostra os acessórios usados no experimento e como serão utilizados.</p>
+                    <p>Quarto tópico - Resultado – Por meio de imagens exibidas durante o texto a autora exibe os resultados e fases do procedimento e como a placa à ajudou a chegar em tal desfecho.</p>
+                    <p>Quinto tópico – Conclusões – Ela finalizou o experimento comentando sobre algumas características como falhas que ajudaram a melhorar o projeto e como deve se utilizar tais ensinamentos.</p>
+                    <p>O artigo é muito bom tanto para pessoas que cuidam de plantas e para pessoas da área de tecnologia, pois tem a facilidade de utilizar o meio tecnológico e não se preocupar com o aguar da planta, e fica como um incentivo para outras pessoas programarem em Arduino ou similar. </p>
+                    
+                </h4>
+            </article>
+            <br><br><br><br><br><br>
+            <aside>
+                <h2></h2>
+                <ul>
+                    <li> <img class="fatec" alt = "foto1" src = "imagens/livro2.jpg"/></li>                    
+                </ul>
+            </aside>
+
+            <footer>
+                <p>Copyright &copy; Carlos Daniel, todos os direitos reservados.</p>
+            </footer>
+        </section>
+    </body>
+</html>
